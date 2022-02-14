@@ -31,4 +31,24 @@ def solution(A,B):
 
     return answer
     
-# 옛날에 풀었던 
+# 옛날에 풀었던 것인데 기억이 안남
+
+
+
+# 두번째 풀이 ()
+# A는 그냥 순회하고 B는 그때그때 그냥 큰를 곱하면 된다?
+def solution(A,B):
+    answer = 0
+    ch = [0]*len(B)
+    
+    A.sort()
+    B.sort()
+   큰
+    for i in range(len(B)):
+        answer+= A.pop(0) * B.pop()
+        
+    
+    
+    
+
+    return answer
