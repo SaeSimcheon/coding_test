@@ -43,7 +43,7 @@ def solution(A,B):
     
     A.sort()
     B.sort()
-   큰
+   
     for i in range(len(B)):
         answer+= A.pop(0) * B.pop()
         
