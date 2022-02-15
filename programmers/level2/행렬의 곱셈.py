@@ -78,3 +78,22 @@ def solution(arr1, arr2):
 테스트 15 〉	통과 (12.11ms, 10.3MB)
 테스트 16 〉	통과 (4.32ms, 10.5MB)
 '''
+
+
+# 다른 사람들은 어떻게 풀었을까 ?
+
+#  - , - , - , 이도형 , Ezechiel_Kim 외 1 명
+
+def productMatrix(A, B):
+    return [[sum(a*b for a, b in zip(A_row,B_col)) for B_col in zip(*B)] for A_row in A]
+
+# 아래는 테스트로 출력해 보기 위한 코드입니다.
+a = [ [ 1, 2 ], [ 2, 3 ]];
+b = [[ 3, 4], [5, 6]];
+print("결과 : {}".format(productMatrix(a,b)));
+
+
+
+## 반복문 총 3개로 풀었다는 점은 같고, 전체를 list comprehension을 사용했음.
+## 출력을 통해서 구조를 확인하지 않아도 알 수 있다는 점에서 직관적일 수 있다.
+
