@@ -32,3 +32,44 @@ def solution(n):
     
     
     return answer
+    
+    
+
+# 다른 사람들은 어떻게 풀었을까 ?
+# 내 코드와 차이는 나는 for 문을 2개로 짜고 내부에서 조건문을 통해서 이탈한 계획을 세운 반면
+# 아래는 while을 통해서 매 반복마다 조건을 확인하였다.
+
+def expressions(num):
+    answer = 0
+    for i in range(1, num + 1):
+        s = 0
+        while s < num:
+            s += i
+            i += 1
+        if s == num:
+            answer += 1
+
+
+    return answer
+
+# 아래는 반복문 2개에 안쪽 반복문에서 조건문을 통해서 이탈조건을 만들었다는 점에서 나와 같지만, 각 반복문에서 num+1까지 따졌다는 점에서 차이가 있음.
+# 정확히는 안쪽에서는 이탈조건 때문에 내가 짠 코드와 차이가 없지만, 바깥쪽 반복문에서 따지지 않아도 되는 숫자까지 따지기 때문에 상대적으로 오래걸릴 수 있음.
+
+def expressions(num):
+
+    count = 0
+
+    for i in range(1,num+1):
+        sum = 0
+        for f in range(i, num+1):
+            sum += f
+
+            if sum == num:
+                count += 1
+
+            if sum > num :
+                break
+
+    return count
+
+
