@@ -14,7 +14,10 @@ def solution(s):
 
     
     
-    return str(min(s))+' '+str(max(s))
+    return str(min(s))+' '+str(max(s)) # return f"{min(s)} {max(s)}"
+# https://docs.python.org/3/tutorial/inputoutput.html
+# f-string을 이용한 출력이 훨씬 깔끔해보인다.
+
 
 # map 함수에 대해서 정리하자
 # 구분자라는 표현이 어색하므로 정리하자
