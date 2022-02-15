@@ -37,6 +37,7 @@ def solution(arr1, arr2):
 # D+1에 푼 흔적
 # 같은 아이디어로 풀었음.
 # 어제 반복문 하나를 추가해서 푼 것을 list comprehension을 통해서 해결하였음.
+# arr2에 대한 zip을 두번째 반복문에 직접 넣어 사용함으로써 transpose한 matrix를 별도로 두지 않았음.
 
 def solution(arr1, arr2):
     answer  = [ ]
