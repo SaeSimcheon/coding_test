@@ -93,7 +93,7 @@ def solution(A,B):
 def solution(A,B):
     answer = 0
     
-   있
+   
     A.sort(reverse = True)
     B.sort()
     
