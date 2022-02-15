@@ -25,7 +25,7 @@ def solution(s):
 
 # 다른 사람들은 어떻게 풀었을까 ?
 
-# 
+# split한 결과자체가 list니까 거기에 그대로 map을 적용할 수 있네
 
 
 def solution(s):
