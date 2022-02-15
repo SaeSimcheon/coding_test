@@ -31,3 +31,49 @@ def solution(arr1, arr2):
     
     
     return answer
+
+
+
+# D+1에 푼 흔적
+# 같은 아이디어로 풀었음.
+# 어제 반복문 하나를 추가해서 푼 것을 list comprehension을 통해서 해결하였음.
+
+def solution(arr1, arr2):
+    answer  = [ ]
+    #for i in arr1:
+    #    print(i)
+        
+    #for i in zip(*arr2):
+    #    print(i)  
+        
+    for i in arr1:
+        row = list()
+        for j in zip(*arr2):
+            element = [ii * jj for ii ,jj in zip(i,j)]
+            row.append(sum(element))
+        answer.append(row)
+    
+    
+        
+    return answer
+
+
+
+'''
+테스트 1 〉	통과 (2.31ms, 10.4MB)
+테스트 2 〉	통과 (40.01ms, 11MB)
+테스트 3 〉	통과 (44.10ms, 11MB)
+테스트 4 〉	통과 (0.98ms, 10.1MB)
+테스트 5 〉	통과 (29.93ms, 10.8MB)
+테스트 6 〉	통과 (17.51ms, 10.8MB)
+테스트 7 〉	통과 (0.83ms, 10.3MB)
+테스트 8 〉	통과 (0.43ms, 10.1MB)
+테스트 9 〉	통과 (0.36ms, 10.4MB)
+테스트 10 〉	통과 (29.69ms, 10.6MB)
+테스트 11 〉	통과 (3.00ms, 10.3MB)
+테스트 12 〉	통과 (0.70ms, 10.2MB)
+테스트 13 〉	통과 (21.94ms, 10.8MB)
+테스트 14 〉	통과 (62.17ms, 11MB)
+테스트 15 〉	통과 (12.11ms, 10.3MB)
+테스트 16 〉	통과 (4.32ms, 10.5MB)
+'''
