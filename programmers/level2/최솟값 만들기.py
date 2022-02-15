@@ -78,3 +78,26 @@ def solution(A,B):
 
 ## https://programmers.co.kr/questions/15949
 ## 이거 참고하면 greedy selection property로 증명해야
+
+
+
+## D+1 
+
+# 그때그때 최소가 되는 조합으로 따지면 결과적으로 최솟값을 만들 수 있음.
+# A를 내림차순으로 정렬 후에 고정으로 두고 B에서 수를 골라 조합을 맞춘다고 가정했을때, 
+# A가 작아짐에 따라서 B를 작은 순서에서 큰 순서로 선택하면 답이 됨. -> B는 오름차순으로 정렬
+
+# A와 B의 개수가 같고 앞에서 정렬한다고 가정했으므로 zip을 이용한 반복문을 사용할 수 있을 것이라는 생각을 할 수 있음.
+
+
+def solution(A,B):
+    answer = 0
+    
+   있
+    A.sort(reverse = True)
+    B.sort()
+    
+    for i , j in zip(A,B):
+        answer += i*j
+
+    return answer
