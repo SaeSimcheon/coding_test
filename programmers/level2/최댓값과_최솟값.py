@@ -22,3 +22,10 @@ def solution(s):
 
 
 # 다른 사람들은 어떻게 풀었을까 ?
+
+# 
+
+
+def solution(s):
+    s = list(map(int,s.split()))
+    return str(min(s)) + " " + str(max(s))
