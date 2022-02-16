@@ -79,3 +79,41 @@ def solution(arr):
             answer = obj
             break
     return answer
+
+
+# 남들은 어떻게 풀었을까 ?
+## 1. gcd라는 함수로 풀었음.
+from fractions import gcd
+
+
+def nlcm(num):      
+    answer = num[0]
+    for n in num:
+        answer = n * answer / gcd(n, answer)
+
+    return answer
+
+
+
+## 2.gcd라는 함수를 만들어서 풀었음.
+
+# 재귀 함수고 b 즉, 이전 수행의 나머지가 0인 경우 a를 반환하도록 짰음.
+# 재귀함수 잘 debugging 하는 방법 -> legacy
+def gcd(a, b):
+    if b == 0:
+        return a
+    return gcd(b, a%b)
+
+
+def nlcm(num):
+    num.sort()
+    max_num = num[-1]
+    # print (num, max_num)
+    temp = 1
+    for i in range(len(num)):
+        # lcm = (a*b) / gcd
+        # gcd = (a*b) / lcm
+        temp = (num[i] * temp) / (gcd(num[i], temp)) # 이 줄이 제일 중요한데 모르겠네 -> legacy
+        
+        # print (temp)
+    return temp
