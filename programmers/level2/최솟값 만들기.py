@@ -101,3 +101,16 @@ def solution(A,B):
         answer += i*j
 
     return answer
+
+
+## D+2
+
+def solution(A,B):
+    answer = 0
+    A.sort(reverse = True)
+    B.sort()
+    
+    for i,j in zip(A,B):
+        answer += i * j 
+    
+    return answer
