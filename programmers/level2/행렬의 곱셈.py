@@ -97,3 +97,20 @@ print("결과 : {}".format(productMatrix(a,b)));
 ## 반복문 총 3개로 풀었다는 점은 같고, 전체를 list comprehension을 사용했음.
 ## 출력을 통해서 구조를 확인하지 않아도 알 수 있다는 점에서 직관적일 수 있다.
 
+
+
+# D+2
+
+def solution(arr1, arr2):
+    answer = []
+    
+    for i in arr1:
+        one_out = []
+        for j in zip(*arr2):
+            a = sum([ii*jj for ii,jj in zip(i,j)]) # 원소 하나
+            one_out.append(a) # 한 행을 만들기
+        answer.append(one_out)
+        
+    
+    return answer
+
