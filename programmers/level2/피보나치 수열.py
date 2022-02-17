@@ -32,3 +32,25 @@ def solution(n):
         f1 = f2
     answer= f2
     return answer%1234567
+
+
+# 다른 사람들은 어떻게 풀었을까 ?
+# 나처럼 재귀로 푼 사람 없음
+
+def solution(n):
+    f_list = [0,1]
+    for i in range(2,n+1):
+        f_list.append((f_list[i-2]%1234567+f_list[i-1]%1234567)%1234567)
+    return f_list[-1]
+
+
+
+cache = [-1]*100
+def fibonacci(num):
+    if num == 0: return 0
+    if num == 1: return 1
+    if cache[num] != -1: return cache[num]
+    cache[num] = fibonacci(num-1) + fibonacci(num-2)
+    return cache[num]
+
+
