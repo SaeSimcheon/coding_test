@@ -65,3 +65,16 @@ def solution(s):
     s=list(map(lambda x : make_first_upper(x), s.split(' ')))
     
     return " ".join(s)
+
+
+# D+1
+
+def function(element):
+    if element == '':
+        return element
+    else:
+        return element[0].upper() + element[1:]
+def solution(s):
+    s=s.lower()
+    answer = list(map(lambda x : function(x),s.split(" ")))
+    return ' '.join(answer)
