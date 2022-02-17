@@ -103,9 +103,10 @@ def nlcm(num):
 # 구글에 검색해보니까 최소 공배수 최대 공약수 수식 관계가 있네 ->https://www.cuemath.com/numbers/greatest-common-divisor-gcd/
 
 def gcd(a, b):
-    if b == 0:글
+    if b == 0:
         return a
-    return gcd(b, a%b)
+    return gcd(b, a%b) # 유클리디안 방법이라는 것 같음.
+#https://www.rit.edu/academicsuccesscenter/sites/rit.edu.academicsuccesscenter/files/documents/math-handouts/DM6_EuclideanAlgorithm_BP_9_22_14.pdf
 
 
 def nlcm(num):
