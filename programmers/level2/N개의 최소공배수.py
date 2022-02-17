@@ -99,6 +99,8 @@ def nlcm(num):
 
 # 재귀 함수고 b 즉, 이전 수행의 나머지가 0인 경우 a를 반환하도록 짰음.
 # 재귀함수 잘 debugging 하는 방법 -> legacy
+# D+1
+
 def gcd(a, b):
     if b == 0:
         return a
@@ -117,3 +119,23 @@ def nlcm(num):
         
         # print (temp)
     return temp
+
+
+
+# D+1
+
+
+def solution(arr):
+    answer = max(arr)
+    indicator = 0
+    while True:
+        indicator = 0
+        for i in arr:
+            if answer % i !=0:
+                indicator = 1
+                break
+        if indicator ==1:
+            answer +=1
+        else:
+            break
+    return answer
