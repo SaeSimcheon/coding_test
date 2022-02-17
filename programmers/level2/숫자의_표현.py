@@ -72,4 +72,19 @@ def expressions(num):
 
     return count
 
+# D+2
 
+def solution(n):
+    answer = 1
+    
+    for i in range(1,n//2+1):
+        candidate = 0
+        for j in range(i, n//2+2):
+            candidate += j
+            if candidate > n :
+                break
+            if candidate == n :
+                answer +=1
+                break
+    
+    return answer
