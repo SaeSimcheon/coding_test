@@ -100,9 +100,10 @@ def nlcm(num):
 # 재귀 함수고 b 즉, 이전 수행의 나머지가 0인 경우 a를 반환하도록 짰음.
 # 재귀함수 잘 debugging 하는 방법 -> legacy
 # D+1
+# 구글에 검색해보니까 최소 공배수 최대 공약수 수식 관계가 있네 ->https://www.cuemath.com/numbers/greatest-common-divisor-gcd/
 
 def gcd(a, b):
-    if b == 0:
+    if b == 0:글
         return a
     return gcd(b, a%b)
 
@@ -116,6 +117,7 @@ def nlcm(num):
         # lcm = (a*b) / gcd
         # gcd = (a*b) / lcm
         temp = (num[i] * temp) / (gcd(num[i], temp)) # 이 줄이 제일 중요한데 모르겠네 -> legacy
+        # 구글
         
         # print (temp)
     return temp
