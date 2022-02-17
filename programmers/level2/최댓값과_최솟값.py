@@ -42,3 +42,10 @@ def solution(s):
 def solution(s):
     s=list(map(int,s.split(' ')))
     return f"{min(s)} {max(s)}"
+
+
+# D+2
+
+def solution(s):
+    answer = list(map(int,s.split()))
+    return f"{min(answer)} {max(answer)}"
