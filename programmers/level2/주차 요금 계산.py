@@ -1,15 +1,10 @@
 # 주차 요금 계산기
 # 일반적으로 입차 출차 한 쌍으로 되어 있고, 입차만 있는 경우에는 24시로 두고 계산
-# stack 문제로 접근할 수 있지 않을까 ?
-# 입차인 경우 stack에 쌓아두고 출차를 만난 경우 out -> 근데 이건 출차되는 기준이 균일 해야하는데 그렇지 않아서 안 됨.
+# stack 문제로 접근할 수 있지 않을까 ?  -> 입차인 경우 stack에 쌓아두고 출차를 만난 경우 out -> 근데 이건 출차되는 기준이 균일 해야하는데 그렇지 않아서 안 됨.
 # 입차 없는 출차는 없음
-
-
 # 입차 기록 dict - 출차가 종료까지 되지 않는 경우는 마지막에 따짐.
 # 입차 -> 출차가 오면 dict에서 삭제
-
 # 누적 주차시간 기록 dict
-
 # 딕셔너리에서 key 및 값을 아예 지우는 것 del로 그냥 하면 되나 ? -> 맞음.
 '''
     putin["asd"] = 1
@@ -74,3 +69,36 @@ def solution(fees, records):
     # The end of records
     
     return answer
+
+
+# 다른 사람은 어떻게 풀었을까 ?
+
+from collections import defaultdict
+from math import ceil
+
+class Parking:
+    def __init__(self, fees):
+        self.fees = fees
+        self.in_flag = False
+        self.in_time = 0
+        self.total = 0
+
+    def update(self, t, inout):
+        self.in_flag = True if inout=='IN' else False
+        if self.in_flag:  self.in_time = str2int(t)
+        else:             self.total  += (str2int(t)-self.in_time)
+
+    def calc_fee(self):
+        if self.in_flag: self.update('23:59', 'out')
+        add_t = self.total - self.fees[0]
+        return self.fees[1] + ceil(add_t/self.fees[2]) * self.fees[3] if add_t >= 0 else self.fees[1]
+
+def str2int(string):
+    return int(string[:2])*60 + int(string[3:])
+
+def solution(fees, records):
+    recordsDict = defaultdict(lambda:Parking(fees))
+    for rcd in records:
+        t, car, inout = rcd.split()
+        recordsDict[car].update(t, inout)
+    return [v.calc_fee() for k, v in sorted(recordsDict.items())]
