@@ -61,3 +61,26 @@ def solution(msg):
                     break
     
     return answer
+
+
+
+# 다른 사람들은 어떻게 풀었을까 ?
+
+
+def solution(msg):
+    answer = []
+    tmp = {chr(e + 64): e for e in range(1, 27)} # 여기는 동일
+    num = 27
+    while msg: # msg를 직접 수정
+        tt = 1 
+        while msg[:tt] in tmp.keys() and tt <= msg.__len__(): # 길이가 tt
+            tt += 1 # 만약 이탈을 못하면 tt를 증가시켜줌 나는 이거 반대로 하고싶었고, in 조건 쓰고 싶지 않았음.
+            
+        tt -= 1
+        if msg[:tt] in tmp.keys(): # 더이상 사전안에서 탐색이 안 되면 이탈.이거 문자열 수정화는 과정에서 아마 '' 나오게 되지 않나 ?
+            # 실행해본 것이 아니라서 잘 모르겠음
+            answer.append(tmp[msg[:tt]])
+            tmp[msg[:tt + 1]] = num 
+            num += 1 # 내 코드에서 dict_end 역할.
+        msg = msg[tt:] # 나는 s라고 두고 풀었음.
+    return answer
