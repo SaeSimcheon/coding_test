@@ -34,3 +34,30 @@ def solution(msg):
                     break
     
     return answer
+
+
+# 현재 입력과 일치하는 가장 긴 문자열을 찾음 -> 사전을 반대로 하는 것이 좋을 것 같음.
+# 정규표현식 굳이 쓰지 않고 사전의 문자열 길이만큼 잘라내서 비교하는 것이 좋을 것 같음.
+# 기억이 나지 않는 부분은 반드시 확인하고 넘어가기
+# 부분부분 확인하면서 구현하기
+
+def solution(msg):
+    dictionary = {i+1:chr(65+i) for i in range(25,-1,-1)}
+    dict_end = 26 
+    answer = []
+    s = msg
+    
+    while s : 
+        for i in range(dict_end,0,-1):
+            candidate = dictionary[i]
+            if s[:len(candidate)] == candidate : 
+                answer.append(i)
+                s = s[len(candidate):]
+                if s == '':
+                    break
+                else:
+                    dict_end+=1
+                    dictionary[dict_end] = candidate + s[0]
+                    break
+    
+    return answer
