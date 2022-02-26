@@ -79,3 +79,26 @@ def solution(board):
 테스트 2 〉	실패 (시간 초과)
 테스트 3 〉	실패 (시간 초과)
   '''
+
+    
+    
+
+    
+'''
+끝내 효율성 테스트는 통과하지 못했고 옛날에 풀어놨던 답을 봤음.
+DP로 풀었음
+'''
+
+def solution(board):
+    answer = 0
+    if len(board) == 1 and len(board[0]) == 1:
+        if board[0][0] == 0:
+            return 0
+        elif board[0][0] == 1:
+            return 1
+    for i in range(1, len(board)):
+        for j in range(1, len(board[0])):
+            if board[i][j] != 0:
+                board[i][j] = min(board[i-1][j], board[i][j-1], board[i-1][j-1]) + 1
+            answer = max(answer, board[i][j])
+    return answer ** 2
