@@ -26,3 +26,26 @@ def solution(cacheSize, cities):
             cache[i]+=1
     
     return answer
+
+
+
+# 다른 사람 풀이
+
+def solution(cacheSize, cities):
+    import collections
+    cache = collections.deque(maxlen=cacheSize)
+    time = 0
+    for i in cities:
+        s = i.lower()
+        if s in cache:
+            cache.remove(s)
+            cache.append(s)
+            time += 1
+        else:
+            cache.append(s)
+            time += 5
+    return time
+
+# deque로 풀었고, 데크의 빠른 조회를 이용해서 조회가 되면 remove로 제거 하고 다시 append 하는 방식을 사용했다. 
+# maxlen이라는 것을 지정해줌으로써 원소가 추가로 더해지면 자동으로 사라지게 하는 특성을 이용했다.
+# https://skeo131.tistory.com/76
