@@ -28,3 +28,9 @@ def solution(n):
     
     
     return ans
+
+
+# 다른 사람 풀이
+# ㅋㅋㅋ
+def solution(n):
+    return bin(n).count('1')
