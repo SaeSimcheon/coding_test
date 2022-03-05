@@ -1,5 +1,5 @@
 # 풀긴 풀었는데 해가 정확히 마지막에 완벽하게 F[N-1]로 설계를 안 해서 잘 푼건지 확신이 안 섬
-# 
+# 해가 될 수 있는 하한에 관하여 따져야하는 것 같
 
 import sys
 sys.stdin = open('input.txt','r')
@@ -110,3 +110,6 @@ def lis_reverse(arr):
 num = int(input())
 arr = list(map(int, input().split()))
 print(lis_reverse(arr))
+
+
+
