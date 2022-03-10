@@ -1,4 +1,4 @@
-# bottom up 방식
+# topdown 방식
 import sys
 sys.setrecursionlimit(10000) 
 sys.stdin = open('input.txt','r')
@@ -31,7 +31,7 @@ def dfs(x,y):
 
 print(dfs(0,0))
 
-# topdown 방식
+# bottom up 방식
 
 import sys
 sys.stdin = open('input.txt','r')
