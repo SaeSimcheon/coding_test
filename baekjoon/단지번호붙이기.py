@@ -1,0 +1,112 @@
+import sys
+
+#sys.stdin = open('input.txt','r')
+N = int(sys.stdin.readline())
+mat = []
+for i in range(N):
+    mat.append(list(map(int,list(sys.stdin.readline().rstrip()))))
+
+dy = [1,0,-1,0]
+dx = [0,1,0,-1]
+group = []
+
+def dfs(x,y):
+    global count
+    for i in range(4):
+        nx = x +dx[i]
+        ny = y +dy[i]
+        if 0 <= nx < N and 0 <= ny < N:
+            if mat[nx][ny] == 1:
+                mat[nx][ny] =0
+                count +=1
+                dfs(nx,ny)
+    return
+
+count =1
+for i in range(N):
+    #S = mat[i]
+    for j in range(N):
+        if mat[i][j] == 1:
+            mat[i][j]= 0
+            dfs(i,j)
+            group.append(count)
+            count=1
+print(len(group))
+group.sort()
+for i in group:
+    print(i)
+    
+    
+
+    
+# 다른 사람들은 어떻게 풀었을까 ?
+
+
+size = int(input())
+m = [list(input()) for y in range(size)]
+stack = []
+noh = 0;
+
+lst = []
+
+def nav():
+    global noh
+    global size
+    y, x = stack.pop()
+    if y >= 0 and x>= 0 and y < size and x < size and m[y][x] == '1':
+        stack.append((y-1,x))
+        stack.append((y+1,x))
+        stack.append((y,x-1))
+        stack.append((y,x+1))
+        m[y][x] = '0'
+        noh += 1
+
+for y in range(size):
+    for x in range(size):
+        if m[y][x] == '1':
+            stack.append((y,x))
+            while len(stack) > 0:
+                nav()
+            lst.append(noh)
+            noh = 0
+
+print(len(lst))
+for e in sorted(lst):
+    print(e)
+
+    
+    
+# 
+def val(a,b):
+    valid=[(a+1,b),(a-1,b),(a,b+1),(a,b-1)]
+    if a==0:
+        valid.remove((a-1,b))
+    if a==n:
+        valid.remove((a+1,b))
+    if b==0:
+        valid.remove((a,b-1))
+    if b==n:
+        valid.remove((a,b+1))
+    return valid
+
+def bfs(r,c):
+    q=[(r,c)]
+    u=1
+    apt[r][c]=0
+    while len(q)>0:
+        x=q[0];q.remove(x)
+        for vals in val(x[0],x[1]):
+            if apt[vals[0]][vals[1]]==1:
+                q.append(vals)
+                apt[vals[0]][vals[1]]=0
+                u+=1
+    return u
+
+s=[]
+for r in range(n+1):
+    for c in range(n+1):
+        if apt[r][c]==1:
+            s.append(bfs(r,c))
+s.sort()
+print(len(s))
+for le in s:print(le)
