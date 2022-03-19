@@ -1,4 +1,44 @@
-# 시간 초과과
+# 3차원으로 풀었어야함. https://jshong1125.tistory.com/31
+
+from collections import deque 
+dx = [1, -1, 0, 0] 
+dy = [0, 0, -1, 1] 
+def bfs(): 
+    q = deque() 
+    q.append([0, 0, 1]) 
+    visited = [[[0] * 2 for _ in range(m)] for _ in range(n)] 
+    visited[0][0][1] = 1 
+    while q: 
+        x, y, c = q.popleft() 
+        if x == n-1 and y == m-1: 
+            return visited[x][y][c] 
+        for i in range(4): 
+            tx = dx[i] + x 
+            ty = dy[i] + y 
+            
+            if 0 <= tx < n and 0 <= ty < m: 
+                if a[tx][ty] == '1' and c == 1: 
+                    
+                    visited[tx][ty][0] = visited[x][y][1] + 1 
+                    q.append([tx, ty, 0]) 
+                    
+                elif a[tx][ty] == '0' and visited[tx][ty][c] == 0: 
+                    visited[tx][ty][c] = visited[x][y][c] + 1 
+                    q.append([tx, ty, c]) 
+    return -1 
+n, m = map(int, input().split()) 
+a = [] 
+for i in range(n): 
+    a.append(list(input())) 
+    
+print(bfs())
+
+
+
+
+
+
+# 시간 초과
 import sys
 from collections import deque
 sys.stdin = open("input.txt",'r')
