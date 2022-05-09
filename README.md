@@ -10,7 +10,7 @@
 하루 10개 목표
 - 0509 총 10 문제 다루었음. 
   - programmers level2 8 문제 (7개 해결. 1개 미해결.)
-  - programmers level1 2 문제 (2)
+  - programmers level1 2 문제 (2개 해결.)
 
 
 ## 학습할 목록
