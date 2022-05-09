@@ -7,7 +7,7 @@
 
 
 # 2022/05/08~
-
+하루 10개 목표
 - 0509 총 7 문제 해결함.
 
 
@@ -16,16 +16,18 @@
 - List
 [시작점1](https://www.acmicpc.net/step)
 [시작점2](https://www.acmicpc.net/workbook/view/4349)
-  - Graph - **0510~0512**
+  - Graph
     - https://www.acmicpc.net/step/24
     - https://www.acmicpc.net/step/26
     - 다익스트라
-    - 플로이드 와샬 ...
-  - bfs dfs
+    - 플로이드 와샬
+  - bfs dfs **0510~0512**
     - https://www.acmicpc.net/workbook/view/1983
-  - 이분 탐색
+  - 이분 탐색 **0513~0515**
     - https://www.acmicpc.net/step/29
-  - 경로 탐색
+  - 백트래킹 **
+    - https://www.acmicpc.net/step/34
+  - 경로 탐색 
     - [인프런](https://www.inflearn.com/course/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4-%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/dashboard)
   - DP
     - https://www.acmicpc.net/step/16
@@ -33,6 +35,5 @@
     - https://www.acmicpc.net/step/41
   - 투 포인터
     - https://www.acmicpc.net/step/59
-  - 백트래킹
-    - https://www.acmicpc.net/step/34
+
 
