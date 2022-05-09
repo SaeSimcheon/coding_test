@@ -16,7 +16,7 @@
 - List
 [시작점1](https://www.acmicpc.net/step)
 [시작점2](https://www.acmicpc.net/workbook/view/4349)
-  - Graph - **0510 ~ **
+  - Graph - **0510 ~**
     - https://www.acmicpc.net/step/24
     - https://www.acmicpc.net/step/26
     - 다익스트라
