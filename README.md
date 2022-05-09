@@ -10,9 +10,25 @@
 
 # 학습할 목록
 
+
 - 0509 list
-  - Graph
+[시작점1](https://www.acmicpc.net/step)
+[시작점2](https://www.acmicpc.net/workbook/view/4349)
+  - Graph 
+    - https://www.acmicpc.net/step/24
+    - https://www.acmicpc.net/step/26
   - bfs dfs
+    - https://www.acmicpc.net/workbook/view/1983
   - 이분 탐색
-  - 격자 문제
+    - https://www.acmicpc.net/step/29
+  - 경로 탐색
+
   - DP
+    - https://www.acmicpc.net/step/16
+    - https://www.acmicpc.net/step/17
+    - https://www.acmicpc.net/step/41
+  - 투 포인터
+    - https://www.acmicpc.net/step/59
+  - 백트래킹
+    - https://www.acmicpc.net/step/34
+
