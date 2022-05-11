@@ -1,4 +1,5 @@
-
+## 최초 풀이
+```python
 # 최단거리 문제
 # queue는 선입선출이다.
 import sys
@@ -27,6 +28,55 @@ while Q:
     
 
 print(DP[N-1][M-1])
+```
+
+
+## 0510
+
+- 금방 풀긴 했는데... 퇴화했네
+
+```python
+
+import sys
+from collections import deque
+sys.stdin = open('input.txt','r')
+N,M = map(int,sys.stdin.readline().split())
+
+mat = [list(sys.stdin.readline().rstrip()) for i in range(N)]
+
+
+
+D = [(0,1),(1,0),(-1,0),(0,-1)]
+
+
+# bfs는 최단 경로를 보장한다.
+
+def solution() :
+    son = []
+    answer =1
+    queue = [(0,0)]
+    while queue :
+        for this in queue :
+            for d in D :
+                nx = this[0] + d[0]
+                ny = this[1] + d[1]
+
+                if 0 <= nx < N and 0 <= ny < M and mat[nx][ny] == '1':
+                    if nx == N-1 and ny == M-1 :
+                        answer += 1
+                        print(answer)
+                        return
+                    mat[nx][ny] = '0'
+                    son.append((nx,ny))
+        
+        answer += 1
+        queue = son[:]
+    print(answer)
+    return 
+solution()
+```
+
+
 
 
 
