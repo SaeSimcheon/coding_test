@@ -19,7 +19,7 @@
     - https://www.acmicpc.net/step/24
     - https://www.acmicpc.net/step/26
     - 그래프 경로 관련 알고리즘 **0515**
-  - bfs dfs **0510~0512**
+  - bfs dfs **0510~0513**
     - https://www.acmicpc.net/workbook/view/1983
   - 이분 탐색 **0514**
     - https://www.acmicpc.net/step/29
