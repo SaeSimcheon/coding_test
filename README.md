@@ -21,6 +21,7 @@
     - 그래프 경로 관련 알고리즘 
   - bfs dfs **0510~0514**
     - https://www.acmicpc.net/workbook/view/1983
+    - [bfs와 dfs 비교](https://foameraserblue.tistory.com/188?category=481823)
   - 이분 탐색 **0515**
     - https://www.acmicpc.net/step/29
     - [이분 탐색의 계산 복잡도에 대한 글](https://jwoop.tistory.com/9?category=1057849)
