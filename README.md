@@ -25,6 +25,9 @@
   - 이분 탐색 **0515**
     - https://www.acmicpc.net/step/29
     - [이분 탐색의 계산 복잡도에 대한 글](https://jwoop.tistory.com/9?category=1057849)
+    - upper bound / lower bound
+    - LIS
+    - 최장 간격
   - 백트래킹 **0516**
     - https://www.acmicpc.net/step/34
   - 경로 탐색 
