@@ -143,7 +143,7 @@ def upper_bound(given):
 - lower bound
 - 이 형태로 아는 것이 좋을듯
 
-```
+```python
 def lower_bound(given):
     a = 0
     b = len(A)
