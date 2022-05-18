@@ -121,7 +121,7 @@ a,b,point,case
 
 
 ### Rightmost case
-
+- return 에서 b 로 설정하면 upper bound
 ```python
 def upper_bound(given):
     a = 0
@@ -137,4 +137,28 @@ def upper_bound(given):
         print(a,b,point,A)
     
     return b-1
+```
+### Leftmost 
+
+- lower bound
+- 이 형태로 아는 것이 좋을듯
+
+```
+def lower_bound(given):
+    a = 0
+    b = len(A)
+    print('start',a,b)
+    while a <b :
+
+        point = (a+b) //2
+
+        if A[point] >= given :
+            b = point
+        else:
+            a = point +1
+        print("a,b,point,case")
+        print(a,b,point,A)
+    
+    return a 
+
 ```
