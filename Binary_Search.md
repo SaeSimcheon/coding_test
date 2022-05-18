@@ -118,3 +118,23 @@ a,b,point,case
 5
 
 ```
+
+
+### Rightmost case
+
+```python
+def upper_bound(given):
+    a = 0
+    b = len(A)
+    print('start',a,b)
+    while a <b :
+        point = (a+b) //2
+        if A[point] > given :
+            b = point
+        else:
+            a = point +1
+        print("a,b,point,case")
+        print(a,b,point,A)
+    
+    return b-1
+```
