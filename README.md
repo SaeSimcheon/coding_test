@@ -10,6 +10,13 @@
 하루 10개 목표
 
 
+
+# Routine list
+
+- 매일 left most right most 수기 작성
+- 냅색 문제 풀고 가기
+
+
 ## 학습할 목록
 - programmers level2.
 - List
