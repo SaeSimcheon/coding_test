@@ -11,11 +11,11 @@
 
 
 
-# Routine list
+# Routine list (5월 ~)
 
 - 매일 left most right most 수기 작성
 - 냅색 문제 풀고 가기
-
+- 매일 다익스트라 알고리즘 수기 작성
 
 ## 학습할 목록
 - programmers level2.
