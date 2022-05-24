@@ -162,3 +162,71 @@ def lower_bound(given):
     return a 
 
 ```
+
+```0525
+
+import sys
+
+sys.stdin = open('input.txt','r')
+
+
+A=list(map(int,sys.stdin.readline().split()))
+
+
+
+L = 0
+R = len(A)
+
+T = 4
+while L < R :
+    mid = (L + R )//2
+
+    if A[mid] < T :
+        L = mid+1
+    elif A[mid] >T :
+        R = mid
+    elif A[mid] == T:
+        R = mid
+print(A)
+print(L)
+
+
+L=0
+R=len(A)
+
+while L < R :
+    mid = (L+R) //2
+
+    if A[mid] < T :
+        L = mid +1
+    elif A[mid] > T :
+        R = mid
+    elif A[mid] == T :
+        L = mid +1
+print(A)
+print(R-1) # right most
+print(R) # upper bound
+
+'''
+A = [1, 2, 3, 4, 4, 4, 5, 6, 7]
+[1, 2, 3, 4, 4, 4, 5, 6, 7]
+3
+[1, 2, 3, 4, 4, 4, 5, 6, 7]
+5
+
+[1, 2, 3, 100, 101, 102]
+3
+[1, 2, 3, 100, 101, 102]
+2
+3
+
+- target 값이 sequence 안에 없는 경우
+L과 R이 가리키는 곳이 같음.
+- 그 값이 위치해야하는 자리
+
+1 2 3 5 6 7
+
+
+'''
+
+```
