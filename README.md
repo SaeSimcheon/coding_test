@@ -14,7 +14,7 @@
 # Routine list (5월 ~)
 
 - 매일 left most right most 수기 작성 [풀고가기](https://www.acmicpc.net/problem/1450)
-- 매일 다익스트라 알고리즘 수기 작성 -> [풀고가기](https://www.acmicpc.net/step/26)
+- 매일 다익스트라 알고리즘 수기 작성 -> [풀고가기](https://www.acmicpc.net/problem/1753)
 - 매일 플로이드-와샬 알고리즘 수기 작성 -> [풀고가기](https://www.acmicpc.net/problem/11404)
 - 매일 벨만-포드 알고리즘 수기 작성 -> [풀고가기](https://www.acmicpc.net/problem/11657)
 
