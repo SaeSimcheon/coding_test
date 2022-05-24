@@ -233,7 +233,7 @@ L과 R이 가리키는 곳이 같음.
 
 
 # left and right most에 대한 Wiki pseudocode 기준 구현 팁
-
+## 반드시 정렬할 것
 ## while 안의 if 문 '==일때 차이에 집중.'
 
 ### left most는 기준 값과 같을때 왼쪽으로 당겨옴.
