@@ -230,3 +230,50 @@ L과 R이 가리키는 곳이 같음.
 '''
 
 ```
+
+
+# left and right most에 대한 Wiki pseudocode 기준 구현 팁
+
+## while 안의 if 문 '==일때 차이에 집중.'
+
+### left most는 기준 값과 같을때 왼쪽으로 당겨옴.
+
+```python
+
+if A[m] < T :
+  L = m +1
+elif A[m] > T :
+  R = m
+elif A[m] == T :
+  R = m
+```
+
+### right most는 기준 값과 같을때 오른쪽으로 당겨옴.
+
+```python
+if A[m] < T :
+  L = m+1
+elif A[m] >T :
+  R = m
+elif A[m] == T :
+  L = m+1
+```
+
+- return은 각각 L과 R-1
+
+## 기준 값이 없는 경우에 L과 R이 가리키는 위치가 같음.
+
+- 어떤 수가 있어야하는 위치를 가리킴
+
+
+```
+T = 4
+[1, 2, 3, 100, 101, 102]
+L = 3
+[1, 2, 3, 100, 101, 102]
+R -1 = 2
+R = 3
+
+```
+
+
