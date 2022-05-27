@@ -22,6 +22,7 @@
   - 상향식
   - 하향식
 - [매일 연속합 풀고가기](https://www.acmicpc.net/problem/1912)
+  - Kadane's algorithm 정리
 
 ## 학습할 목록
 - programmers level2.
