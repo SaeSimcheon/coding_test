@@ -21,7 +21,7 @@
 - [매일 피보나치 풀고 가기](https://www.acmicpc.net/problem/1003)
   - 상향식
   - 하향식
-
+- [매일 연속합 풀고가기](https://www.acmicpc.net/problem/1912)
 
 ## 학습할 목록
 - programmers level2.
