@@ -26,7 +26,7 @@
   - Kadane's algorithm 정리
 - [매일 가장 긴 증가하는 부분 수열 풀고가기](https://www.acmicpc.net/problem/11053)
   - O(N^2) vs O(NlogN)
-  - lower bound를 이용한 풀이
+  - [lower bound를 이용한 풀이](https://www.acmicpc.net/problem/12015)
 
 ## 학습할 목록
 - programmers level2.
