@@ -21,7 +21,7 @@
 - [매일 피보나치 풀고 가기](https://www.acmicpc.net/problem/1003)
   - 상향식
   - 하향식
-- 메모이
+- 메모이제이션 패턴 정리해보기
 - [매일 연속합 풀고가기](https://www.acmicpc.net/problem/1912)
   - Kadane's algorithm 정리
 - [매일 가장 긴 증가하는 부분 수열 풀고가기](https://www.acmicpc.net/problem/11053)
