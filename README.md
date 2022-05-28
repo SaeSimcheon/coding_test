@@ -21,8 +21,11 @@
 - [매일 피보나치 풀고 가기](https://www.acmicpc.net/problem/1003)
   - 상향식
   - 하향식
+- 메모이
 - [매일 연속합 풀고가기](https://www.acmicpc.net/problem/1912)
   - Kadane's algorithm 정리
+- [매일 가장 긴 증가하는 부분 수열 풀고가기](https://www.acmicpc.net/problem/11053)
+  - O(N^2) vs O(NlogN)
 
 ## 학습할 목록
 - programmers level2.
