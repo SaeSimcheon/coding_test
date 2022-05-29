@@ -28,6 +28,7 @@
   - O(N^2) vs O(NlogN)
   - [lower bound를 이용한 풀이](https://www.acmicpc.net/problem/12015)
   - https://en.wikipedia.org/wiki/Longest_increasing_subsequence -> 위키피디아에 적힌 방식 학습하기
+  - [수기 작성](https://github.com/SaeSimcheon/coding_test/tree/main)
 ## 학습할 목록
 - programmers level2.
 - List
