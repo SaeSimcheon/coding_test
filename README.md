@@ -29,6 +29,9 @@
   - [lower bound를 이용한 풀이](https://www.acmicpc.net/problem/12015)
   - https://en.wikipedia.org/wiki/Longest_increasing_subsequence -> 위키피디아에 적힌 방식 학습하기
   - [수기 작성](https://github.com/SaeSimcheon/coding_test/tree/main)
+- [LCS](https://www.acmicpc.net/problem/9251)
+  - https://en.wikipedia.org/wiki/Longest_common_subsequence_problem
+  - https://velog.io/@emplam27/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B7%B8%EB%A6%BC%EC%9C%BC%EB%A1%9C-%EC%95%8C%EC%95%84%EB%B3%B4%EB%8A%94-LCS-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-Longest-Common-Substring%EC%99%80-Longest-Common-Subsequence
 ## 학습할 목록
 - programmers level2.
 - List
