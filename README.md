@@ -35,6 +35,8 @@
 - [매일 평범한 냅색](https://www.acmicpc.net/problem/12865)
   - https://dojinkimm.github.io/algorithm/2019/10/19/dp-2.html
   - https://en.wikipedia.org/wiki/Knapsack_problem#Dynamic_programming_in-advance_algorithm
+- [매일 포도주 시식](https://www.acmicpc.net/problem/2156)
+
 ## 학습할 목록
 - programmers level2.
 - List
