@@ -38,6 +38,9 @@
 - [매일 포도주 시식](https://www.acmicpc.net/problem/2156)
   - https://yabmoons.tistory.com/512
 
+- A* 공부하기
+
+
 ## 학습할 목록
 - programmers level2.
 - List
