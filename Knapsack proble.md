@@ -1,5 +1,5 @@
-[참고](https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/)
-
+[참고1](https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/)
+[참고2](https://sites.radford.edu/~nokie/classes/360/dp-knapsack.html)
 
 - i 번째 아이템까지 사용했을때 weight j에서의 최대.
 - 만약 현재 weight을 넘는 경우에는 이전 아이템까지의 최대를 사용. 
@@ -13,6 +13,9 @@
   - 아이템을 넣지 않음. -> mat[i][j-1]
   
 - 모든 0부터 w까지 따짐.
+
+
+
 
 
 ```python
