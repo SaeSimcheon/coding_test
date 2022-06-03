@@ -39,8 +39,11 @@
   - https://yabmoons.tistory.com/512
 
 - A* 공부하기
-- 
-
+- 냅색 계열 정리하기
+  - https://www.acmicpc.net/problem/12865
+  - https://www.acmicpc.net/problem/7579
+  - https://www.acmicpc.net/problem/2293
+  - https://www.acmicpc.net/problem/2629
 
 ## 학습할 목록
 - programmers level2.
@@ -65,10 +68,10 @@
   - 경로 탐색 
     - [인프런](https://www.inflearn.com/course/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4-%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8/dashboard)
   - DP
-    - https://www.acmicpc.net/step/16
-    - https://www.acmicpc.net/step/17
+    - https://www.acmicpc.net/step/16 **0602**
+    - https://www.acmicpc.net/step/17 **0603**
     - https://www.acmicpc.net/step/41
-  - 투 포인터
+  - 투 포인터 **05?**
     - https://www.acmicpc.net/step/59
 
 
