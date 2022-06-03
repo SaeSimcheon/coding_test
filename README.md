@@ -76,6 +76,7 @@
 
 ### 6월
 - [동적 계획법과 최단거리 역추적](https://www.acmicpc.net/step/41)
+  - A* 먼저
 - [정렬](https://www.acmicpc.net/step/9)
 - [스택](https://www.acmicpc.net/step/11)
 - [큐와 덱](https://www.acmicpc.net/step/12)
