@@ -74,4 +74,11 @@
   - 투 포인터 **05?**
     - https://www.acmicpc.net/step/59
 
+### 6월
+- [동적 계획법과 최단거리 역추적](https://www.acmicpc.net/step/41)
+- [스택](https://www.acmicpc.net/step/11)
+- [큐와 덱](https://www.acmicpc.net/step/12)
+- [우선순위 큐](https://www.acmicpc.net/step/13)
+- [해시테이블](https://www.acmicpc.net/step/49)
+
 
