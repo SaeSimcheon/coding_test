@@ -79,6 +79,8 @@
 - [스택](https://www.acmicpc.net/step/11)
 - [큐와 덱](https://www.acmicpc.net/step/12)
 - [우선순위 큐](https://www.acmicpc.net/step/13)
+- [힙]
 - [해시테이블](https://www.acmicpc.net/step/49)
+- [트리](https://www.acmicpc.net/step/23)
 
 
