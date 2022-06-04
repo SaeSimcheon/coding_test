@@ -44,6 +44,8 @@
   - https://www.acmicpc.net/problem/7579
   - https://www.acmicpc.net/problem/2293
   - https://www.acmicpc.net/problem/2629
+- 역추적 문제
+  - [](https://www.acmicpc.net/problem/9019)
 
 ## 학습할 목록
 - programmers level2.
