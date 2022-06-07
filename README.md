@@ -1,3 +1,6 @@
+# 참고
+https://algorithmist.com/wiki/Longest_increasing_subsequence
+
 # 2022/02/14~2022/04
 
 
