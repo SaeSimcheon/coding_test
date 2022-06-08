@@ -105,4 +105,4 @@ https://algorithmist.com/wiki/Longest_increasing_subsequence
 - [매일 스택 구현](https://www.acmicpc.net/problem/10828)
 - 스택 문제 추가로 더 
 - [매일 스택 ](https://www.acmicpc.net/problem/1874)
-
+- 큐, 데크 구현 
