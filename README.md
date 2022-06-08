@@ -12,9 +12,8 @@ https://algorithmist.com/wiki/Longest_increasing_subsequence
 # 2022/05/08~
 하루 10개 목표
 
-
-
-# Routine list (5월 ~)
+## 5월
+### Routine list 
 
 - 매일 left most right most 수기 작성 [풀고가기](https://www.acmicpc.net/problem/1450)
 - 매일 다익스트라 알고리즘 수기 작성 -> [풀고가기](https://www.acmicpc.net/problem/1753)
@@ -83,7 +82,7 @@ https://algorithmist.com/wiki/Longest_increasing_subsequence
   - 투 포인터 **05?**
     - https://www.acmicpc.net/step/59
 
-### 6월
+## 6월
 - [동적 계획법과 최단거리 역추적](https://www.acmicpc.net/step/41)
   - A* 먼저
 - [정렬](https://www.acmicpc.net/step/9)
@@ -96,12 +95,12 @@ https://algorithmist.com/wiki/Longest_increasing_subsequence
 
 
 
-#### 자료구조
+### 자료구조
 - https://imasoftwareengineer.tistory.com/93
 
 
 
-##### Routine list
+### Routine list
 - [매일 스택 구현](https://www.acmicpc.net/problem/10828)
 - 스택 문제 추가로 더 
 - [매일 스택 ](https://www.acmicpc.net/problem/1874)
