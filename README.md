@@ -94,7 +94,14 @@ https://algorithmist.com/wiki/Longest_increasing_subsequence
 - [해시테이블](https://www.acmicpc.net/step/49)
 - [트리](https://www.acmicpc.net/step/23)
 
-#### 자료구조 주안점
+
+
+#### 자료구조
 - https://imasoftwareengineer.tistory.com/93
 
+
+
+##### Routine list
+- [매일 스택 구현](https://www.acmicpc.net/problem/10828)
+- 
 
