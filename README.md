@@ -92,7 +92,7 @@ https://algorithmist.com/wiki/Longest_increasing_subsequence
 - [힙]
 - [해시테이블](https://www.acmicpc.net/step/49)
 - [트리](https://www.acmicpc.net/step/23)
-
+- [구현 꾸준히 풀기](https://www.acmicpc.net/problemset?sort=ac_desc&algo=102)
 
 
 ### 자료구조
