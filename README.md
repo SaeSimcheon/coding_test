@@ -114,4 +114,7 @@ https://algorithmist.com/wiki/Longest_increasing_subsequence
 
 
 
-- 
+- 재귀
+- 분할정복
+
+
