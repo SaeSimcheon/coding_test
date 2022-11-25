@@ -19,5 +19,11 @@
 
 - 일반적으로 고정된 사이즈 윈도우를 사용하는 경우를 슬라이딩 윈도우로 따로 구분하기도 함.
 - 정렬 여부에 관계 없이 활용
-* minimum window substring
-* sliding windwo maxsum -> 완전한 풀이는 x
+
+* minimum window substring 11 26
+* sliding windwo maxsum -> 완전한 풀이는 x 11 26
+* longest repeating character replacement
+
+
+
+[참고](https://leetcode.com/tag/two-pointers/discuss/1122776/Summary-of-Sliding-Window-Patterns-for-Subarray-Substring)
