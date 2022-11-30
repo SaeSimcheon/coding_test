@@ -127,3 +127,4 @@ https://algorithmist.com/wiki/Longest_increasing_subsequence
 - http://daplus.net/python-%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%97%90%EC%84%9C-%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%B4-%EB%B0%98%EB%B3%B5%EB%90%98%EB%8A%94%EC%A7%80-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%95%8C-%EC%88%98-%EC%9E%88/
 
 - 총착까지 최대 이익
+- 슬라이딩 윈도우, 이분탐색, 투포인터
