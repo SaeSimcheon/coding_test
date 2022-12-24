@@ -1,0 +1,38 @@
+# 처음에 root1을 수정하는 방법을 생각했는데 shallow copy가 일어나서 수정이 제대로 되지 않음.
+# 미리 컴파일된 TreeNode를 수정하여 return 하는 구조로 짜야겠다고 생각.
+# 해당 node가 None이 아니면 left와 right가 존재하므로 이때만 함수를 호출
+# 
+
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+from collections import deque
+
+class Solution:
+    merged = TreeNode()
+    def _inner(self,root1,root2):
+        if root1 is None and root2 is None:
+            return None
+
+        this_node = TreeNode()
+        if root1 is not None :
+            this_node.val += root1.val
+            if root2 is None :
+                this_node.left = self._inner(root1.left,None)
+                this_node.right = self._inner(root1.right,None)
+        if root2 is not None :
+            this_node.val += root2.val
+            if root1 is None:
+                this_node.left= self._inner(None,root2.left)
+                this_node.right =self._inner(None,root2.right)
+        if root1 is not None and root2 is not None:
+            this_node.left = self._inner(root1.left,root2.left)
+            this_node.right = self._inner(root1.right,root2.right)
+            
+        return this_node
+    def mergeTrees(self, root1: Optional[TreeNode], root2: Optional[TreeNode]) -> Optional[TreeNode]:
+
+        return self._inner(root1,root2)
