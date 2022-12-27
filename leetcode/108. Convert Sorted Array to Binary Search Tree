@@ -1,0 +1,31 @@
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+
+# 높이 균형 트리(height balanced tree) 는 -> 각 노드별 좌우측 subtree의 높이가 1차이가 안 남.
+# bst(binary search tree)는 한 노드를 기준으로 좌측은 무조건 작은 원소 오른쪽은 크거나 같음.
+# 이진탐색을 이용해서 tree 구조를 만든다고 생각하고 풀었음.
+# 정렬된 배열을 기준으로 함.
+
+
+# 완전이진트리 -> 마지막 level을 제외하고 나머지 level에서 완전히 채워져 있음.
+
+class Solution:
+    def sortedArrayToBST(self, nums: List[int]) -> Optional[TreeNode]:
+        def _inner(left,right):
+            if left > right:
+                return None
+            
+            m = (left+right)//2
+            this = TreeNode(val = nums[m])
+            
+            this.left = _inner(left,m-1)
+            this.right = _inner(m+1,right)
+
+            return this
+
+
+        return _inner(0,len(nums)-1)
