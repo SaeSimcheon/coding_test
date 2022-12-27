@@ -5,6 +5,8 @@
 #         self.left = left
 #         self.right = right
 
+# 교재에서 제시한 해결은 중위 순회라고 함
+
 # 한 노드를 기준으로 차이가 적은 값은 left subtree에서 최대한 오른쪽에 있는 node와
 # right subtree에서 최대한 왼쪽에 있는 node가 아닐까 ?
 
