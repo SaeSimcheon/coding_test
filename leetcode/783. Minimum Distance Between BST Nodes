@@ -1,0 +1,51 @@
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+
+# 한 노드를 기준으로 차이가 적은 값은 left subtree에서 최대한 오른쪽에 있는 node와
+# right subtree에서 최대한 왼쪽에 있는 node가 아닐까 ?
+
+# 위에서 말한 것처럼 한 노드를 기준으로 왼쪽 subtree에서 최대한 오른쪽의 node, 오른쪽 subtree에서 최대한 왼쪽의 node를 각각 해당 node와 차이를 구하는 방법을 선택하였다.
+# 이때, 오른쪽과 왼쪽 각각만을 탐색하는 별도의 재귀함수를 만들어서 상위 함수인 _inner 함수에서 사용하였다.
+
+class Solution:
+    can = float('inf')
+    def minDiffInBST(self, root: Optional[TreeNode]) -> int:
+        def _go_left(root):
+
+            if root is not None and root.left is None:
+                return root.val
+            return _go_left(root.left)
+        
+        def _go_right(root):
+            if root is not None and root.right is None:
+                return root.val
+            return _go_right(root.right)
+        
+        def _inner(root):
+            if root is None :
+                return 
+            print(root)
+            left = float('inf')
+            right = float('inf')
+            if root.right is not None :
+                left = abs(_go_left(root.right)-root.val)
+                
+                _inner(root.right)
+            if root.left is not None :
+                right = abs(_go_right(root.left)-root.val)
+                _inner(root.left)
+            
+            
+            self.can = min(self.can,min(left,right))
+
+        _inner(root)
+        
+
+
+
+
+        return self.can
